@@ -3,14 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:ttmf/enterfield.dart';
 import 'package:ttmf/homepage.dart';
 
-class Sign extends StatefulWidget {
-  const Sign({Key? key}) : super(key: key);
+class Login extends StatefulWidget {
+  const Login({Key? key}) : super(key: key);
 
   @override
-  _SignState createState() => _SignState();
+  _LoginState createState() => _LoginState();
 }
 
-class _SignState extends State<Sign> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -52,18 +52,10 @@ class _SignState extends State<Sign> {
               SizedBox(
                 height: 35,
               ),
-              EnterField(
-                'Name',
-                Icons.person,
-              ),
+
               EnterField('Email', Icons.mail_rounded),
-              EnterField(
-                'Password',
-                Icons.lock_rounded,
-                isPassword: true,
-              ),
-              EnterField('Confirm Password', Icons.lock_rounded,
-                  isPassword: true),
+              EnterField('Password', Icons.lock_rounded, isPassword: true,),
+
               Container(
                 height: 40,
                 width: 130,
@@ -76,7 +68,7 @@ class _SignState extends State<Sign> {
                   children: [
                     Center(
                       child: Text(
-                        'SIGN UP',
+                        'LOGIN ',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
