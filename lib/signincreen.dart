@@ -45,23 +45,16 @@ class _SignState extends State<Sign> {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontStyle: FontStyle.normal,
-                    fontSize: 26,
+                    fontSize: 36,
                   ),
                 ),
               ),
               SizedBox(
-                height: 35,
+                height: 15,
               ),
-              EnterField(
-                'Name',
-                Icons.person,
-              ),
+              EnterField('Name', Icons.person,),
               EnterField('Email', Icons.mail_rounded),
-              EnterField(
-                'Password',
-                Icons.lock_rounded,
-                isPassword: true,
-              ),
+              EnterField('Password', Icons.lock_rounded, isPassword: true,),
               EnterField('Confirm Password', Icons.lock_rounded,
                   isPassword: true),
               Container(
