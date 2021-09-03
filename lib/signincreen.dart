@@ -57,38 +57,52 @@ class _SignState extends State<Sign> {
               EnterField('Password', Icons.lock_rounded, isPassword: true,),
               EnterField('Confirm Password', Icons.lock_rounded,
                   isPassword: true),
-              Container(
-                height: 40,
-                width: 130,
-                decoration: BoxDecoration(
-                    color: Color(0xffDD8E31),
-                    borderRadius: BorderRadius.circular(47)),
-                margin: EdgeInsets.only(left: 260, top: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Center(
-                      child: Text(
-                        'SIGN UP',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w700,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween ,
+                children:[
+
+                  Container(
+
+                  ),
+
+
+
+                  Container(
+                  height: 40,
+                  width: 130,
+                  margin: EdgeInsets.only(top: 30,right: 5),
+                  decoration: BoxDecoration(
+                      color: Color(0xffDD8E31),
+                      borderRadius: BorderRadius.circular(47),
+                  ),
+
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Center(
+                        child: Text(
+                          'SIGN UP',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      width: 6,
-                    ),
-                    Container(
-                      child: Icon(
-                        Icons.arrow_forward_outlined,
-                        color: Colors.white,
+                      SizedBox(
+                        width: 6,
                       ),
-                    ),
-                  ],
+                      Container(
+                        child: Icon(
+                          Icons.arrow_forward_outlined,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
+        ],
               ),
             ],
           ),
