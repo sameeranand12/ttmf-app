@@ -4,6 +4,8 @@ import 'package:ttmf/enterfield.dart';
 import 'package:ttmf/homepage.dart';
 import 'dart:math' as math;
 
+import 'package:ttmf/profilescreen/screen/profile.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -14,9 +16,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xffDD8E31),
         ),
@@ -65,30 +65,40 @@ class _LoginState extends State<Login> {
                   color: Color(0xffDD8E31),
                   borderRadius: BorderRadius.circular(47)),
               margin: EdgeInsets.only(left: 260, top: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Center(
-                    child: Text(
-                      'LOGIN ',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.w700,
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Profile(),
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Center(
+                      child: Text(
+                        'LOGIN ',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 6,
-                  ),
-                  Container(
-                    child: Icon(
-                      Icons.arrow_forward_outlined,
-                      color: Colors.white,
+                    SizedBox(
+                      width: 6,
                     ),
-                  ),
-                ],
+                    Container(
+                      child: Icon(
+                        Icons.arrow_forward_outlined,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
               ),
                 ),
 
@@ -126,7 +136,6 @@ class _LoginState extends State<Login> {
           ),
 
         ),
-      ),
     );
   }
 }

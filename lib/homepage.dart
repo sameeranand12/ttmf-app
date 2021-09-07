@@ -13,8 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-       child: SingleChildScrollView(
+    return  SingleChildScrollView(
          child: Column(
            mainAxisAlignment: MainAxisAlignment.spaceAround,
            // crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -137,7 +136,7 @@ class _HomePageState extends State<HomePage> {
              ),
            ],
          ),
-       ),
+
     );
   }
 }

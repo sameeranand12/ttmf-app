@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ttmg/SecondPage.dart';
 
 import 'ThirdPage.dart';
+import 'SecondPage.dart';
+import 'Fourth_Page.dart';
 
 void main() {
   runApp(MyApp());
