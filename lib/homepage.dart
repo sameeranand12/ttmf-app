@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                    Container(
                      margin: EdgeInsets.fromLTRB(27, 7, 0, 0),
                      child: Text(
-                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vulputate malesuada cursus sed.',
+                       'Lorem ipsum dolor sit amet, consectetur vdsvvdv adipiscing elit. Dui vulputate malesuada cursus sed.',
                        style: TextStyle(
                          fontSize: 17,
                          fontStyle: FontStyle.normal,
