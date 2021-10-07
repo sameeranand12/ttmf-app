@@ -27,7 +27,7 @@ class _bottomnavigateState extends State<bottomnavigate> {
   @override
   void initState() {
     pageList.add(HomeScreen());
-    pageList.add(Home2());
+    pageList.add(Mapq());
     pageList.add(Notifications());
     //  pageList.add(LocationScreen());
     super.initState();
