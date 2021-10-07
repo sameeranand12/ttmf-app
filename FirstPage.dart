@@ -3,9 +3,6 @@ import 'package:ttmg/SecondPage.dart';
 
 import 'ThirdPage.dart';
 
-void main() {
-  runApp(MyApp());
-}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
