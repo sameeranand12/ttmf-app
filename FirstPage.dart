@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ttmg/SecondPage.dart';
+import 'package:ttmg/Bottom_Navigation.dart';
 
-import 'ThirdPage.dart';
+import 'Bottom_Navigation_Notifications.dart.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
