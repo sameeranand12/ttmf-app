@@ -1,0 +1,1 @@
+To use the fonts, either change the pubspec(fonts).yaml to pubspec.yaml or copy the contents of fonts in the required pubspec.yaml
