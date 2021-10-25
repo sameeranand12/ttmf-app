@@ -4,6 +4,8 @@ import 'package:ttmf/enterfield.dart';
 import 'package:ttmf/homepage.dart';
 import 'dart:math' as math;
 
+import 'package:ttmf/profilescreen/screen/my_profile.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -65,63 +67,73 @@ class _LoginState extends State<Login> {
                   color: Color(0xffDD8E31),
                   borderRadius: BorderRadius.circular(47)),
               margin: EdgeInsets.only(left: 260, top: 30),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Center(
-                    child: Text(
-                      'LOGIN ',
-                      style: TextStyle(
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyProfilePage(),
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Center(
+                      child: Text(
+                        'LOGIN ',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 6,
+                    ),
+                    Container(
+                      child: Icon(
+                        Icons.arrow_forward_outlined,
                         color: Colors.white,
-                        fontSize: 18,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.w700,
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 6,
-                  ),
-                  Container(
-                    child: Icon(
-                      Icons.arrow_forward_outlined,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
                 ),
 
-              Positioned(
-                left: 72.53,
-              right: -5.87,
-              top: 20.02,
-              bottom: 69.52,
-                child: Stack(
-
-                  alignment: Alignment.topRight,
-                  children:[
-                    Transform.rotate(
-                      angle: math.pi / .268,
-                      child:  Container(
-                        height: 80,
-                        width: 130,
-                        color: Colors.red,
-                      ),
-                    ),
-
-
-                    Transform.rotate(
-                      angle: math.pi / .168,
-                      child:  Container(
-                        height: 85,
-                        width: 125,
-                        color: Colors.blue,
-                      ),
-                    ),
-           ],
-                ),
-              ),
+           //    Positioned(
+           //      left: 72.53,
+           //    right: -5.87,
+           //    top: 20.02,
+           //    bottom: 69.52,
+           //      child: Stack(
+           //
+           //        alignment: Alignment.topRight,
+           //        children:[
+           //          Transform.rotate(
+           //            angle: math.pi / .268,
+           //            child:  Container(
+           //              height: 80,
+           //              width: 130,
+           //              color: Colors.red,
+           //            ),
+           //          ),
+           //
+           //
+           //          Transform.rotate(
+           //            angle: math.pi / .168,
+           //            child:  Container(
+           //              height: 85,
+           //              width: 125,
+           //              color: Colors.blue,
+           //            ),
+           //          ),
+           // ],
+           //      ),
+           //    ),
             ],
           ),
 

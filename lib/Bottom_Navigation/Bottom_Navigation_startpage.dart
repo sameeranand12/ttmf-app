@@ -25,7 +25,7 @@ class _bottomnavigateState extends State<bottomnavigate> {
   List<Widget> pageList = [];
   @override
   void initState() {
-    pageList.add(HomeScreen());
+    pageList.add(WelcomeScreen());
     pageList.add(Mapq());
     pageList.add(Notifications());
     //  pageList.add(LocationScreen());

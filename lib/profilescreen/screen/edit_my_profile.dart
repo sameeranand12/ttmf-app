@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ttmf/Bottom_Navigation/Bottom_Navigation.dart';
 
 class EditMyProfile extends StatefulWidget {
   const EditMyProfile({Key? key}) : super(key: key);
@@ -181,13 +182,25 @@ class _EditMyProfileState extends State<EditMyProfile> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Center(
-                        child: Text(
-                          'SAVE',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 23,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w700,
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => WelcomeScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            child: Text(
+                              'SAVE',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 23,
+                                fontStyle: FontStyle.normal,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
                           ),
                         ),
                       ),
