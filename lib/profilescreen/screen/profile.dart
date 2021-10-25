@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ttmf/profilescreen/screen/my_profile.dart';
-import 'package:ttmf/profilescreen/wediget/singleboxview.dart';
+import 'package:ttmf/profilescreen/widget/singleboxview.dart';
 
 class Profile extends StatefulWidget {
   @override
