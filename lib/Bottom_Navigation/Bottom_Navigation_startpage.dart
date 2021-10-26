@@ -35,10 +35,6 @@ class _bottomnavigateState extends State<bottomnavigate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(""),
-        backgroundColor: Colors.orangeAccent,
-      ),
       body: IndexedStack(
         index: _selectedPage,
         children: pageList,
