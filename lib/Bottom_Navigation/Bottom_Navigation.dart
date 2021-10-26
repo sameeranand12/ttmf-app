@@ -119,6 +119,7 @@ class _MapqState extends State<Mapq> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: GoogleMap(
           onMapCreated: _onMapCreated,
