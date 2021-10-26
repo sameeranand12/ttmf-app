@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ttmf/profilescreen/screen/my_profile.dart';
+import '../homepage.dart';
 import 'Bottom_Navigation.dart';
 import 'Bottom_Navigation_Notifications.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: bottomnavigate(),
-    );
-  }
-}
 class bottomnavigate extends StatefulWidget {
   const bottomnavigate({Key? key}) : super(key: key);
 
@@ -25,10 +17,11 @@ class _bottomnavigateState extends State<bottomnavigate> {
   List<Widget> pageList = [];
   @override
   void initState() {
+    pageList.add(HomePage());
     pageList.add(WelcomeScreen());
     pageList.add(Mapq());
     pageList.add(Notifications());
-    //  pageList.add(LocationScreen());
+    pageList.add(MyProfilePage());
     super.initState();
   }
 
@@ -45,6 +38,10 @@ class _bottomnavigateState extends State<bottomnavigate> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_outlined),
+            label: 'Appointment',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_location),
