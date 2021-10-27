@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ttmf/Bottom_Navigation/Bottom_Navigation_startpage.dart';
+import 'package:ttmf/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
           backgroundColor:Color(0xffDD8E31),
 
         ), //AppBar
-        body:bottomnavigate(),
+        body:HomePage(),
       ),
     );
   }
