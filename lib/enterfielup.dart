@@ -1,18 +1,15 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
-class EnterField extends StatelessWidget {
+class EnterFieldup extends StatelessWidget {
   final IconData icons;
 
   final String title;
-  final String value;
 
   var _controller = TextEditingController();
 
   final bool isPassword;
 
-  EnterField(this.title, this.icons, this.value, {this.isPassword = true});
+  EnterFieldup(this.title, this.icons, {this.isPassword = true});
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +39,6 @@ class EnterField extends StatelessWidget {
                   filled: true,
                   labelText: title,
                 ),
-                onChanged: (val) {
-                  val = value;
-                },
               ),
             ),
           )
@@ -53,10 +47,3 @@ class EnterField extends StatelessWidget {
     );
   }
 }
-
-// Padding(
-//                 padding: const EdgeInsets.all(15.0),
-//                 child: TextField(
-//                   decoration: InputDecoration(labelText: 'Name'),
-//                   onChanged: (val) {
-//                     name = val;

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ttmf/profilescreen/screen/edit_my_profile.dart';
+import 'package:ttmf/user/user.dart';
 
 class MyProfilePage extends StatefulWidget {
   const MyProfilePage({Key? key}) : super(key: key);
@@ -158,6 +159,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
     );
   }
 }
+
 class MyProfilePage2 extends StatefulWidget {
   const MyProfilePage2({Key? key}) : super(key: key);
 
@@ -206,12 +208,17 @@ class _MyProfilePage2State extends State<MyProfilePage2> {
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                    child: Text(
-                      "Henry Gray",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w500,
-                      ),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Welcome",
+                          style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        Text('')
+                      ],
                     ),
                   ),
                   new Spacer(),
